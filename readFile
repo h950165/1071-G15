@@ -1,0 +1,22 @@
+void readFile(Lotto lottos[])
+{
+  int choice;
+  char  filename[80];
+  char str[500] ;
+  printf("Enter filename to read: ");
+  scanf("%s",filename);
+  fp = fopen(filename,"r");
+
+  if(fp==NULL)
+  {
+    printf("Error on writing to file\n");
+    exit(1);
+  }
+
+  while(fgets(str,500,fp)!=NULL)
+        {
+            printf("%s",str);
+        }
+    fclose(fp);
+}
+
