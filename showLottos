@@ -1,0 +1,9 @@
+void showLottos(Lotto lottos[], int n)
+{
+  for(int  i=0;i<n;i++)
+    {
+        printf("%d/%02d/%02d %s   ", lottos[i].date.year, lottos[i].date.month, lottos[i].date.day ,lottos[i].str );
+        printf("\n");
+    }
+
+}
